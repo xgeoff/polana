@@ -517,6 +517,23 @@ h4 {
     grid-template-columns: 1fr;
   }
 
+  .feature-image,
+  .image-pair {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .feature-image {
+    margin-top: 0;
+  }
+
+  .feature-image img,
+  .image-pair img {
+    width: 100vw;
+    max-width: none;
+  }
+
   .dish div {
     grid-template-columns: minmax(0, auto) auto;
   }
