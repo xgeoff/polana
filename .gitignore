@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# IntelliJ / JetBrains IDEs
+.idea/
+*.iml
+*.iws
+out/
+
+# Local editor metadata
+.vscode/
