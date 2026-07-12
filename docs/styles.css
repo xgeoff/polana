@@ -313,6 +313,30 @@ h4 {
   object-fit: cover;
 }
 
+.menu-cover {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  align-content: center;
+  border: 1px solid rgba(162, 151, 107, 0.45);
+  background:
+    linear-gradient(rgba(250, 248, 245, 0.72), rgba(250, 248, 245, 0.8)),
+    url("assets/images/pierogi.png") center / cover;
+  color: var(--forest);
+}
+
+.menu-cover span {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+.menu-cover small {
+  font-size: 0.78rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
 .menu-list {
   display: grid;
   gap: clamp(3.5rem, 7vw, 5rem);
@@ -355,6 +379,7 @@ h4 {
 }
 
 .dish h4 {
+  overflow-wrap: anywhere;
   font-size: clamp(1.35rem, 2.4vw, 1.72rem);
   line-height: 1.2;
 }
@@ -535,7 +560,7 @@ h4 {
   }
 
   .dish div {
-    grid-template-columns: minmax(0, auto) auto;
+    grid-template-columns: minmax(0, 1fr) auto;
   }
 
   .dish div::after {
